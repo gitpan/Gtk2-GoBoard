@@ -10,11 +10,16 @@ WriteMakefile(
 	           },
     PREREQ_PM	=> {
     		    Gtk2		   => 1.043,
-                    Games::Go::SimpleBoard => 0,
+                    Games::Go::SimpleBoard => 1.01,
 		   },
     DIR		=> [],
     NAME	=> 'Gtk2::GoBoard',
     VERSION_FROM => 'GoBoard.pm',
+    META_MERGE => {
+        recommends => {
+           Audio::Play   => 1,
+        }
+    },
     PM		=> {
        'GoBoard.pm'		=> '$(INST_LIBDIR)/GoBoard.pm',
 

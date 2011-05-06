@@ -38,10 +38,12 @@ data/w-05.png
 data/circle-b.png
 data/circle-w.png
 data/shadow.png
+data/cross-b.png
+data/cross-w.png
 data/square-b.png
 data/square-w.png
 data/triangle-b.png
 data/triangle-w.png
 data/woodgrain-01.jpg
 
-META.yml                                 Module meta-data (added by MakeMaker)
+META.json                                Module meta-data (added by MakeMaker)

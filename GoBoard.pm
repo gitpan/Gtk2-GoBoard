@@ -57,11 +57,16 @@ sounds will silently not being played. The module intentionally doesn't
 depend on L<Audio::Play> as it isn't actively maintained anymore and fails
 to install cleanly.
 
+Note that L<Audio::Play> is broken on 64-bit platforms, which the author
+knows about for half a decade now, but apparently can't be bothered to
+fix. The symptoms are that it cannot load the soundfile and will silently
+result in - silence.
+
 =over 4
 
 =cut
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 no warnings;
 use strict;
